@@ -44,12 +44,12 @@ module RailsAdmin::Config::Fields::Types
     # Latitude value to display in the map if the latitude attribute is nil
     # (Otherwise the location defaults to (0,0) which is in the Gulf of Guinea
     register_instance_option(:default_latitude) do
-      0 # Latitude of London, United Kingdom
+      69.9001176266854 # Latitude of London, United Kingdom
     end
 
     # Longitude value to display if the longitude attribute is nil
     register_instance_option(:default_longitude) do
-      0 # Longitude of London, United Kingdom
+      167.60156393051147 # Longitude of London, United Kingdom
     end
 
     # Default zoom level of the map
