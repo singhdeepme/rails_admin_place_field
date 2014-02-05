@@ -149,8 +149,7 @@
 
 #places_options
   %h4 Google Place
-  %input#google_place_input{ :type => 'text', :style => "width: 90%;" }
-
+  = form.send :input_field, field.address, :id => "google_place_input"
 %hr
 
 #foursquare_options
