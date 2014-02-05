@@ -4,7 +4,7 @@ module RailsAdmin::Config::Fields::Types
     RailsAdmin::Config::Fields::Types::register(:place, self)
 
     def allowed_methods
-      [@name, longitude_field, foursquare_field, gplace_field]
+      [@name, longitude_field, foursquare_field, gplace_field,address_field]
     end
 
     # THe name of the corresponding longitude field to match the latitude field
