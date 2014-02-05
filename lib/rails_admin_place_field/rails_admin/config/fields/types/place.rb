@@ -17,6 +17,10 @@ module RailsAdmin::Config::Fields::Types
       :foursquare
     end
 
+    register_instance_option(:address_field) do
+      :address
+    end
+
     register_instance_option(:gplace_field) do
       :gplace
     end
@@ -40,12 +44,12 @@ module RailsAdmin::Config::Fields::Types
     # Latitude value to display in the map if the latitude attribute is nil
     # (Otherwise the location defaults to (0,0) which is in the Gulf of Guinea
     register_instance_option(:default_latitude) do
-      51.5 # Latitude of London, United Kingdom
+      0 # Latitude of London, United Kingdom
     end
 
     # Longitude value to display if the longitude attribute is nil
     register_instance_option(:default_longitude) do
-      -0.126 # Longitude of London, United Kingdom
+      0 # Longitude of London, United Kingdom
     end
 
     # Default zoom level of the map
